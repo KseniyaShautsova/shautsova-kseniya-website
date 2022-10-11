@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Orbitron', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, p{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.app-header{
+  background-image: url("./components/img/bg.JPG");
+  background-repeat: no-repeat;
+  background-size:cover;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 5% 7%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text{
+  margin-left: 7%;
+}
+
+.navbar-menu{
+  font-size: 1.1rem;
+  width: 45%;
+  
+
+}
+
+a:link, a:visited{
+  color: #6A6C63;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+ li{
+  margin: auto;
+
+}
+
+.navbar-icons{
+  margin-left: 10px;
+  width: 15%;
+
+
+}
+
+.nav-icon{
+  max-width: 30px;
+  background-color: #C6CFC7;
+  border-radius: 15px;
+  border: 1px solid #C6CFC7;
+}
+
+.app-body{
+  padding: 0 7%;
+  margin-bottom: 15%;
+}
+
+.promo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 12% 0;
+
+
+}
+
+.promo-img{
+  width: 35%;
+  border-radius: 100%;
+  border: 2px solid #FEECE1;
+}
+
+.promo-text{
+  margin-left: 3%;
+  font-size:xx-large;
+  font-weight: 600;
+  padding-bottom: 1%;
+  border-bottom: 2px solid #C6CFC7;
+  letter-spacing: 0.1rem;
+}
+
+.h2-text{
+  font-size:x-large;
+  margin-top: 4%;
+}
+
+.h3-text{
+  color: #6A6C63 ;
+  margin: 1.5% 0;
+}
+
+.h3-text-gr{
+  color: #C6CFC7 ;
+  margin-top: 1.5%;
+}
+
+.app-footer{
+  padding: 4% 7%;
+  background-color: #FFF4EE ;
+}
+
+.h2-text-gr{
+  font-size:x-large;
+  margin-top: 4%;
+  font-size: 1.3rem;
+  color:#6A6C63;
+}
+
+
+.foot-icon{
+  max-width: 45px;
+  background-color: #C6CFC7;
+  border-radius: 15px;
+  border: 1px solid #C6CFC7;
+
+}
+
+.footer-icons{
+  padding: 5% 0;
+  
+
+}
+
+.footer-icons > ul> li{
+  margin: auto;
+}
+
+.my-portfolio{
+  margin: 6% 0;
+}
+
+
+.portfolio-cases{
+  margin: 3% 0 8% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  border-top: 2px solid #C6CFC7;
+  border-bottom: 2px solid #C6CFC7;
+  background-color: #FFF4EE ;
+  padding: 0 3%;
+  overflow-x: scroll;
+}
+
+.portfolio-case{
+  margin: 3% 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:center;
+  align-items:center;
+  margin-right:  8%;
+
 }
 
-.App-link {
-  color: #61dafb;
+.cases-img{
+  height: 15rem;
+  width: 14rem;
+  border-radius: 5px;
+  border: 2px solid #FEECE1;
+  margin: 4% 0 5% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cases-title{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.cases-text{
+  margin: 5% 0 2% 0;
+
+}
+
+.cases-link{
+ font-size: 0.9rem;
 }
