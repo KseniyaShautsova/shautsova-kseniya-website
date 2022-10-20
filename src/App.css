@@ -2,6 +2,7 @@
   font-family: 'Orbitron', sans-serif;
 }
 
+
 h1, h2, h3, h4, p{
   padding: 0;
   margin: 0;
@@ -26,6 +27,14 @@ h1, h2, h3, h4, p{
   align-items: center;
 }
 
+.logo-img{
+  transition-duration: 0.5s;
+}
+
+.logo-img:hover{
+  transform: scale(1.1);
+ }
+
 .logo-text{
   margin-left: 7%;
 }
@@ -33,8 +42,6 @@ h1, h2, h3, h4, p{
 .navbar-menu{
   font-size: 1.1rem;
   width: 45%;
-  
-
 }
 
 a:link, a:visited{
@@ -58,13 +65,18 @@ ul{
 
  li{
   margin: auto;
+  transition-duration: 0.3s;
 
+}
+
+li:hover{
+  transform: scale(1.1);
 }
 
 .navbar-icons{
   margin-left: 10px;
   width: 15%;
-
+  
 
 }
 
@@ -73,11 +85,18 @@ ul{
   background-color: #C6CFC7;
   border-radius: 15px;
   border: 1px solid #C6CFC7;
+  transition-duration: 0.5s;
+
+}
+
+.nav-icon:hover{
+  transform: scale(1.2);
 }
 
 .app-body{
   padding: 0 7%;
   margin-bottom: 15%;
+  
 }
 
 .promo{
@@ -86,6 +105,8 @@ ul{
   justify-content: center;
   align-items: center;
   margin: 12% 0;
+  
+  
 
 
 }
@@ -93,7 +114,13 @@ ul{
 .promo-img{
   width: 35%;
   border-radius: 100%;
-  border: 2px solid #FEECE1;
+  border: 2px solid #C6CFC7;;
+  transform: rotate(1);
+  transition-duration: 0.5s;
+}
+
+.promo-img:hover{
+  transform: scale(1.1);
 }
 
 .promo-text{
@@ -138,7 +165,11 @@ ul{
   background-color: #C6CFC7;
   border-radius: 15px;
   border: 1px solid #C6CFC7;
+  transition-duration: 0.5s;
+}
 
+.foot-icon:hover{
+  transform: scale(1.2);
 }
 
 .footer-icons{
@@ -176,6 +207,9 @@ ul{
   justify-content:center;
   align-items:center;
   margin-right:  8%;
+  background-color: white ;
+  padding: 2%;
+  border-radius: 5px;
 
 }
 
@@ -190,6 +224,7 @@ ul{
 .cases-title{
   font-weight: 600;
   font-size: 1.3rem;
+  padding-bottom: 4%;
 }
 
 .cases-text{
@@ -204,97 +239,62 @@ ul{
 
 @media only screen and (max-width: 600px) {
 
+
   
   .promo-img{
     width: 50%;
-    border-radius: 100%;
     margin-bottom: 3%;
-    border: 2px solid #FEECE1;
   }
+
   .promo{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin: 20% 0;
-  
   }
 
   .promo-text{
     margin-top: 4%;
     margin-left: 3%;
     font-size:x-large;
-    font-weight: 600;
-    padding-bottom: 1%;
-    border-bottom: 2px solid #C6CFC7;
-    letter-spacing: 0.1rem;
   }
   
   .h2-text{
-    font-size:x-large;
-    margin-top: 4%;
     font-size: 1.1rem;
   }
   
   .h3-text{
-    color: #6A6C63 ;
     margin-top: 1.5% 0;
     font-size: 1rem;
   }
   
   .h3-text-gr{
-    color: #C6CFC7 ;
-    margin-top: 1.5%;
     font-size: 1rem;
   }
   
   .h2-text-gr{
-    font-size:x-large;
-    margin-top: 4%;
     font-size: 1.1rem;
-    color:#6A6C63;
   }
 
   .navbar-menu{
     font-size: 1rem;
-    width: 80%;
+    width: 100%;
   }
+
+
   .navbar-icons{
-    margin-left: 10px;
-    width: 0;
-    visibility:hidden;
-  
-  
+    display: none;
   }
 
   .header-logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    visibility:hidden;
-    width: 0;
+    display: none;
   }
 
   .portfolio-cases{
     margin: 5% 0 15% 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-    border-top: 2px solid #C6CFC7;
-    border-bottom: 2px solid #C6CFC7;
-    background-color: #FFF4EE ;
-    padding: 0 3%;
-    overflow-x: scroll;
   }
 
   .foot-icon{
     max-width:35px;
-    background-color: #C6CFC7;
-    border-radius: 15px;
-    border: 1px solid #C6CFC7;
   
   }
 }
